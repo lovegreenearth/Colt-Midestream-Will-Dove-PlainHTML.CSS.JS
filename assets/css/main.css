@@ -1,3 +1,7 @@
+.carousel-inner {
+  height: 100vh !important;
+}
+
 .image-description {
   position: absolute;
   top: 444.656px;
@@ -52,7 +56,7 @@
   transform: skew(-20deg);
   background: var(--button_gradient_top_color);
   border-color: var(--button_border_color);
-  width: 180px;
+  width: fit-content;
   padding-top: var(--button_padding-top, 13px);
   padding-bottom: var(--button_padding-bottom, 13px);
   padding-right: var(--button_padding-right, 29px);
@@ -85,4 +89,251 @@
 .colt-btn a:hover {
   text-decoration: none;
   color: white;
+}
+
+.my-40 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.page-title {
+  margin-top: 10px;
+  margin-right: 0px;
+  margin-bottom: 15px;
+  margin-left: 0px;
+}
+
+.page-title h2 {
+  color: #009579;
+  margin: 0;
+  font-size: var(--h2_typography-font-size);
+  text-transform: var(--h2_typography-text-transform);
+  font-style: var(--h2_typography-font-style,normal);
+  padding: 0;
+  text-align: left;
+}
+
+.title-separator {
+  float: left;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 11;
+}
+
+.separator-border {
+  background-color: #a09857;
+  border-top-width: 2px;
+  height: 1px;
+  border-bottom-width: 0;
+  flex-grow: 2;
+  border: 0 solid #e7e6e6;
+}
+
+.page-content p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: myriad-pro, sans-serif !important;
+  color: var(--body_typography-color);
+  line-height: var(--body_typography-line-height);
+  font-size: var(--body_typography-font-size);
+  font-weight: var(--body_typography-font-weight);
+  letter-spacing: var(--body_typography-letter-spacing);
+  font-style: var(--body_typography-font-style,normal);
+}
+
+.sep-clear {
+  clear: both;
+  display: block;
+  height: 1px;
+  font-size: 0;
+  line-height: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.about-colt {
+  background-color: rgba(255,255,255,0.4);
+  background-image: url("../images/about_bg_faded.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-blend-mode: lighten;
+  padding-top: 100px;
+  padding-right: 30px;
+  padding-bottom: 80px;
+  padding-left: 30px;
+  margin-bottom: 0;
+  margin-top: 0;
+  border-width: 0;
+  border-color: #e2e2e2;
+  border-style: solid;
+  background-size: cover;
+}
+
+.about-colt, .management-team {
+  margin-left: var(--hundredp_padding-hundred_percent_negative_margin);
+  margin-right: var(--hundredp_padding-hundred_percent_negative_margin);
+  position: relative;
+}
+
+.about-us-row {
+  width: var(--site_width);
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+
+.about-colt-midstream {
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0,88,80,0.9);
+  padding: 30px;
+  min-height: 1px;
+}
+
+.heading-left {
+  margin: 0;
+  color: white;
+  padding: 0;
+  text-align: left;
+  font-size: var(--h5_typography-font-size);
+  line-height: var(--h5_typography-line-height);
+  text-transform: var(--h5_typography-text-transform);
+  font-style: var(--h5_typography-font-style,normal);
+}
+
+.text {
+  font-family: myriad-pro, sans-serif !important;
+  color: var(--body_typography-color);
+  line-height: var(--body_typography-line-height);
+  font-size: var(--body_typography-font-size);
+  font-weight: var(--body_typography-font-weight);
+  letter-spacing: var(--body_typography-letter-spacing);
+}
+
+.management-team {
+  background-color: rgba(255,255,255,0);
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-top: 0px;
+  padding-right: 30px;
+  padding-bottom: 0px;
+  padding-left: 30px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  border-width: 0;
+  border-color: #e2e2e2;
+  border-style: solid;
+}
+
+.team-member {
+  min-height: 400px;
+  padding: 0 25px;
+  margin-bottom: 40px;
+  margin: 0 0 30px;
+  transform: scale(1);
+  transition: all 350ms ease;
+}
+
+.team-link-control {
+  color: #aaa;
+  text-decoration: none;
+  cursor: pointer;  
+}
+
+.team-link-control figure {
+  position: relative;
+  margin: 0 !important;
+  display: block;
+  overflow: hidden;
+}
+
+figcaption {
+  background: rgba(81, 83, 74,0.8);
+  position: absolute;
+  left: 25px;
+  right: 25px;
+  top: 25px;
+  bottom: 25px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  opacity: 0;
+  backface-visibility: hidden;
+  transform: scale(.6);
+  transition: transform .6s,opacity .3s,-webkit-transform .6s,-moz-transform .6s;
+  font-size: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+figure:hover figcaption {
+  opacity: 1 !important;
+  transform: scale(1);
+}
+
+.team-member-img {
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
+  display: block;
+  position: relative;
+  margin: 0;
+  border: none;
+  max-width: 100%;
+}
+
+.name-title h3 {
+  margin: 0 0 3px;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 1px !important;
+  color: #005850 !important;
+  padding-top: 15px !important;
+  text-transform: var(--h3_typography-text-transform);
+}
+
+.name-title span {
+  color: #51534A !important;
+  margin-bottom: 12px !important;
+  letter-spacing: 1px !important;
+  line-height: 1 !important;
+  font-size: var(--body_typography-font-size);
+}
+
+.personal-info {
+  display: inline-block;
+  width: calc(100% - 1px);
+  vertical-align: middle;
+  font-size: 16px;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.personal-info span {
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 1.4;
+  display: block;
+}
+
+.personal-info h3 {
+  color: white;
+  margin: 0 0 3px;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+@media screen and (min-width: 992px) {
+  .about-colt, .management-team {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
 }
