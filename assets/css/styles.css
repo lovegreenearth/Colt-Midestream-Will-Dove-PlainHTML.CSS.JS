@@ -598,7 +598,7 @@ footer {
   background-color: #005850;
   height: 250px;
   clip-path: polygon(0 0, 0 100%, 50% 0);
-  margin-left: -31px;
+  margin-left: -16px;
   position: absolute;
   width: 100%;
 }

@@ -1,8 +1,88 @@
-.carousel-item {
-  height: 100vh;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+.image-description {
+  position: absolute;
+  top: 444.656px;
+  left: 0px;
+  background-size: inherit;
+  background-position: inherit;
+  font-size: 22.6406px;
+  color: rgb(217, 216, 214);
+  width: 363.867px;
+  height: 202.148px;
+  padding: 0px 0px 0px 24px;
+  white-space: normal;
+  background-color: rgb(0, 88, 80);
+  height: 97.0312px;
+  opacity: 0.7;
+  margin: 0px;
+  z-index: auto;
+  border-width: 0px;
+  filter: none;
+}
+
+.post-content {
+  padding: 50px 10%;
+}
+
+.content-description {
+  margin-bottom: 20px;
+  color: #1d242d;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.dropcap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 4px;
+  float: left;
+  margin-right: 10px;
+  padding: 0;
+  height: 52px;
+  line-height: 52px;
+  color: #009579;
+  font-size: 60px;
+  text-transform: uppercase;
+  font-family: meta bold;
+  font-style: italic;
+}
+
+.colt-btn {
+  transform: skew(-20deg);
+  background: var(--button_gradient_top_color);
+  border-color: var(--button_border_color);
+  width: 180px;
+  padding-top: var(--button_padding-top, 13px);
+  padding-bottom: var(--button_padding-bottom, 13px);
+  padding-right: var(--button_padding-right, 29px);
+  padding-left: var(--button_padding-left, 29px);
+  line-height: var(--button_line_height, 1);
+  text-align: center;
+  margin: 0 auto;
+}
+
+.colt-btn:hover {
+  background-color: var(--button_gradient_top_color_hover);
+}
+
+.colt-btn a {
+  color: var(--button_accent_color);
+  text-decoration: none;
+}
+
+.colt-btn-text {
+  text-transform: uppercase;
+  display: block;
+  transform: skew(20deg);
+  font-size: 17px;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: all 0.2s;
+  letter-spacing: 3px;
+}
+
+.colt-btn a:hover {
+  text-decoration: none;
+  color: white;
 }
