@@ -337,3 +337,10 @@ figure:hover figcaption {
     margin-bottom: 60px;
   }
 }
+
+h1.title {
+  font-size: 54px;
+  line-height: normal;
+  color: #005850;
+  text-align: center;
+}
