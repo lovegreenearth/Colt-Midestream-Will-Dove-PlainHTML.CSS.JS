@@ -36,4 +36,11 @@ $(document).ready(function () {
     $("#slideThree").click(function () {
         $("#myCarousel").carousel(2);
     });
+
+    $("#spot-3548").mouseover(function () { 
+        console.log("here------------")
+        console.log($("#tooltip_3548"))
+        $("#tooltip_3548").css('display', 'block'); 
+    });
+
 });
