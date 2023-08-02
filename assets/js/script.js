@@ -53,4 +53,36 @@ $(document).ready(function () {
         $("#tooltip_9075").css('display', 'none'); 
     });
 
+    $("#spot_4271").mouseover(function () { 
+        $("#tooltip_4271").css('display', 'block'); 
+    });
+
+    $("#spot_4271").mouseleave(function () { 
+        $("#tooltip_4271").css('display', 'none'); 
+    });
+
+    $("#spot_3818").mouseover(function () { 
+        $("#tooltip_3818").css('display', 'block'); 
+    });
+
+    $("#spot_3818").mouseleave(function () { 
+        $("#tooltip_3818").css('display', 'none'); 
+    });
+
+    $("#spot_2864").mouseover(function () { 
+        $("#tooltip_2864").css('display', 'block'); 
+    });
+
+    $("#spot_2864").mouseleave(function () { 
+        $("#tooltip_2864").css('display', 'none'); 
+    });
+
+    $("#spot_4086").mouseover(function () { 
+        $("#tooltip_4086").css('display', 'block'); 
+    });
+
+    $("#spot_4086").mouseleave(function () { 
+        $("#tooltip_4086").css('display', 'none'); 
+    });
+
 });
