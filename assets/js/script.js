@@ -37,10 +37,20 @@ $(document).ready(function () {
         $("#myCarousel").carousel(2);
     });
 
-    $("#spot-3548").mouseover(function () { 
-        console.log("here------------")
-        console.log($("#tooltip_3548"))
-        $("#tooltip_3548").css('display', 'block'); 
+    $("#spot_3548").mouseover(function () { 
+        $("#tooltip_3548").css('display', 'block');
+    });
+
+    $("#spot_3548").mouseleave(function () { 
+        $("#tooltip_3548").css('display', 'none'); 
+    });
+
+    $("#spot_9075").mouseover(function () { 
+        $("#tooltip_9075").css('display', 'block'); 
+    });
+
+    $("#spot_9075").mouseleave(function () { 
+        $("#tooltip_9075").css('display', 'none'); 
     });
 
 });
