@@ -22,7 +22,7 @@
     <link href="./assets/css/header.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div id="header"></div>
+    <div id="header-section"></div>
     <main>
       <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
         <!-- Wrapper for carousel items -->
@@ -140,6 +140,11 @@
         </div>
       </footer>
       <footer class="px-30 footer-copyright-area">
+        <div id="scroll-up">
+          <a>
+            <span></span>
+          </a>
+        </div>
         <div class="text-center w-100">
           <div class="copyright-notice">
             &copy;
@@ -175,11 +180,11 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/header.js"></script>
     <script>
       $(function(){
-        $("#header").load("./layout/header.html"); 
+        $("#header-section").load("./layout/header.html"); 
       });
     </script>
+    <script src="./assets/js/header.js"></script>
   </body>
 </html>

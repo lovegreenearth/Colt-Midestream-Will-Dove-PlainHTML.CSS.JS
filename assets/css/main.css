@@ -173,11 +173,22 @@
   background-size: cover;
 }
 
+.about-colt .row {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .about-colt,
 .management-team {
   margin-left: var(--hundredp_padding-hundred_percent_negative_margin);
   margin-right: var(--hundredp_padding-hundred_percent_negative_margin);
   position: relative;
+}
+
+.management-team,
+.first-part {
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 .about-us-row {
@@ -356,6 +367,8 @@ figure:hover figcaption {
   padding: 10%;
   min-height: 670px;
   height: auto;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .image-frame {
@@ -440,31 +453,37 @@ figure:hover figcaption {
 #spot_3548 {
   left: 65%;
   top: 57%;
+  z-index: 2;
 }
 
 #spot_9075 {
   left: 60%;
   top: 65%;
+  z-index: 3;
 }
 
 #spot_4271 {
   left: 49%;
   top: 68%;
+  z-index: 4;
 }
 
 #spot_3818 {
   left: 48%;
   top: 72%;
+  z-index: 5;
 }
 
 #spot_2864 {
   left: 55%;
   top: 53%;
+  z-index: 1;
 }
 
 #spot_4086 {
   left: 46%;
   top: 80%;
+  z-index: 6;
 }
 
 .spot {
@@ -493,6 +512,7 @@ figure:hover figcaption {
 .imp-shape-spot,
 .imp-shape-text {
   position: absolute;
+  z-index: 1;
 }
 
 .img-shape {
@@ -510,7 +530,9 @@ figure:hover figcaption {
 .imp-tooltip {
   display: none;
   position: absolute;
-  z-index: 1;
+  bottom: 65px;
+  right: -176px;
+  z-index: 1000;
   border-radius: 10px;
   padding: 15px;
   background-color: white;
@@ -572,23 +594,42 @@ figure:hover figcaption {
   position: absolute;
 }
 
-@media screen and (min-width: 992px) {
-  .about-colt,
-  .management-team {
-    margin-top: 60px;
-    margin-bottom: 60px;
-  }
-
-  .squares-container {
-    max-width: 960px;
-  }
-}
-
 h1.title {
   font-size: 54px;
   line-height: normal;
   color: #005850;
   text-align: center;
+}
+
+.banner {
+  background-image: url("../images/sky_bg.jpg");
+  background-size: cover;
+  min-height: 300px;
+  background-color: #f2f3f5;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.banner h1.title {
+  margin-bottom: 45px;
+}
+
+@media screen and (min-width: 992px) {
+  .about-colt,
+  .management-team {
+    margin-top: 60px;
+    /* margin-bottom: 60px; */
+  }
+
+  .squares-container {
+    max-width: 960px;
+  }
 }
 
 @media (min-width: 768px) {

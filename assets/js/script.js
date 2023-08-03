@@ -84,5 +84,4 @@ $(document).ready(function () {
     $("#spot_4086").mouseleave(function () { 
         $("#tooltip_4086").css('display', 'none'); 
     });
-
 });

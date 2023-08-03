@@ -3,6 +3,10 @@ p {
   font-family: myriad-pro, sans-serif !important;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 body {
   font-size: var(--body_typography-font-size);
   line-height: var(--body_typography-line-height);
@@ -579,6 +583,40 @@ footer {
   background-color: #009579;
 }
 
+#scroll-up a {
+  right: 75px;
+  border-radius: 6px 6px 0px 0px;
+  pointer-events: auto;
+  opacity: .9;
+  transition: opacity .4s ease-in-out,background .2s ease-in-out;
+  bottom: 0;
+  height: 35px;
+  position: fixed;
+  text-align: center;
+  width: 48px;
+  background-color: #333;
+  line-height: 1;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+#scroll-up a:hover {
+  background-color: #009579;
+}
+
+#scroll-up a span::before {
+  line-height: 35px;
+  content: "\f106";
+  -webkit-font-smoothing: antialiased;
+  font-family: awb-icons;
+  font-size: 22px;
+  color: #fff;
+}
+
+.fixed-scroll a {
+  visibility: visible !important;
+}
+
 #footer {
   width: 100%;
   min-height: 315px;
@@ -659,6 +697,7 @@ footer {
   justify-content: center;
   align-items: center;
   height: 250px;
+  text-decoration: none !important;
 }
 
 .call-before-info:hover {
