@@ -1,0 +1,113 @@
+<header>
+  <div class="header-wrapper" id="nav">
+    <div id="header">
+      <div class="header-row">
+        <div class="logo">
+          <a>
+            <img
+              src="./assets/images/Colt-Logo-for-Website_Regular-1.png"
+              alt="logo"
+            />
+          </a>
+        </div>
+        <div class="main-menu">
+          <ul>
+            <li class="menu-link" id="index">
+              <a href="./index.html">
+                <span> home </span>
+              </a>
+            </li>
+            <li class="menu-link" id="ourCompany">
+              <a href="./ourCompany.html">
+                <span> our company </span>
+              </a>
+            </li>
+            <li class="menu-link" id="services">
+              <a href="./services.html">
+                <span> services </span>
+              </a>
+            </li>
+            <li class="menu-link" id="contact">
+              <a href="./contact.html">
+                <span> contact </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-header">
+      <div class="header-row">
+        <div class="logo">
+          <a>
+            <img
+              src="./assets/images/Colt-Logo-for-Website_Regular-1.png"
+              alt="logo"
+            />
+          </a>
+        </div>
+        <div class="main-menu">
+          <a id="mobile-menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+      </div>
+      <div id="mobile-menu">
+        <ul>
+          <li class="menu-link">
+            <a href="./index.html">
+              <span> Home </span>
+            </a>
+          </li>
+          <li class="menu-link">
+            <a href="./ourCompany.html">
+              <span> Our Company </span>
+            </a>
+          </li>
+          <li class="menu-link">
+            <a href="./services.html">
+              <span> Services </span>
+            </a>
+          </li>
+          <li class="menu-link">
+            <a href="./contact.html">
+              <span> Contact </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+<script>
+  $(document).ready(function () {
+    $("#mobile-menu-icon").click(function () {
+      if ($("#mobile-menu").attr("class")) {
+        $("#mobile-menu").removeClass("show-mobile-menu");
+      } else {
+        $("#mobile-menu").addClass("show-mobile-menu");
+      }
+    });
+
+    var pathname = window.location.pathname;
+    switch (true) {
+      case pathname.includes("index"):
+        $("#index").addClass("active-menu-link");
+        return;
+      case pathname.includes("ourCompany"):
+        $("#ourCompany").addClass("active-menu-link");
+        return;
+      case pathname.includes("services"):
+        $("#services").addClass("active-menu-link");
+        return;
+      case pathname.includes("contact"):
+        $("#contact").addClass("active-menu-link");
+        return;
+      default:
+        return;
+    }
+  });
+</script>
