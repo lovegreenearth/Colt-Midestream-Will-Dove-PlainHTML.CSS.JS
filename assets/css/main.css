@@ -2,20 +2,21 @@
   height: 100vh !important;
 }
 
+.carousel-item img {
+  height: 100vh;
+}
+
 .image-description {
   position: absolute;
-  top: 444.656px;
+  top: 60%;
   left: 0px;
   background-size: inherit;
   background-position: inherit;
   font-size: 22.6406px;
-  color: rgb(217, 216, 214);
-  width: 363.867px;
-  height: 202.148px;
-  padding: 0px 0px 0px 24px;
+  color: white;
+  padding: 20px;
   white-space: normal;
-  background-color: rgb(0, 88, 80);
-  height: 97.0312px;
+  background-color: rgba(80, 123, 251, 0.9);
   opacity: 0.7;
   margin: 0px;
   z-index: auto;
@@ -45,7 +46,7 @@
   padding: 0;
   height: 52px;
   line-height: 52px;
-  color: #009579;
+  color: #4169e1;
   font-size: 60px;
   text-transform: uppercase;
   font-family: meta bold;
@@ -104,11 +105,21 @@
 }
 
 .page-title h2 {
-  color: #009579;
+  color: #4169e1;
   margin: 0;
   font-size: var(--h2_typography-font-size);
   text-transform: var(--h2_typography-text-transform);
   font-style: var(--h2_typography-font-style, normal);
+  padding: 0;
+  text-align: left;
+}
+
+.page-title h3 {
+  color: #4169e1;
+  margin: 0;
+  font-size: var(--h3_typography-font-size);
+  text-transform: var(--h3_typography-text-transform);
+  font-style: var(--h3_typography-font-style, normal);
   padding: 0;
   text-align: left;
 }
@@ -125,7 +136,7 @@
 }
 
 .separator-border {
-  background-color: #a09857;
+  background-color: #580007;
   border-top-width: 2px;
   height: 1px;
   border-bottom-width: 0;
@@ -191,6 +202,11 @@
   margin: 0 auto;
 }
 
+.max-width-1300 {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
 .about-us-row {
   width: var(--site_width);
   position: relative;
@@ -202,7 +218,7 @@
   background-position: left top;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: rgba(0, 88, 80, 0.9);
+  background-color: rgba(80, 123, 251, 0.9);
   padding: 30px;
   min-height: 1px;
 }
@@ -307,7 +323,7 @@ figure:hover figcaption {
   font-size: 18px;
   line-height: 1.4;
   letter-spacing: 1px !important;
-  color: #005850 !important;
+  color: #4169e1 !important;
   padding-top: 15px !important;
   text-transform: var(--h3_typography-text-transform);
 }
@@ -354,7 +370,7 @@ figure:hover figcaption {
 
 .map-line {
   width: 100px;
-  border-bottom: 3px solid #005850;
+  border-bottom: 3px solid #4169e1;
   position: relative;
   display: inline-block;
 }
@@ -363,7 +379,7 @@ figure:hover figcaption {
   background-position: left top;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: rgba(0, 88, 80, 0.95);
+  background-color: rgba(80, 123, 251, 0.9);
   padding: 10%;
   min-height: 670px;
   height: auto;
@@ -388,7 +404,7 @@ figure:hover figcaption {
 
 .page-title h4 {
   margin: 0;
-  color: #009579;
+  color: #4169e1;
   padding: 0;
   text-align: center;
   font-size: var(--h4_typography-font-size);
@@ -597,7 +613,7 @@ figure:hover figcaption {
 h1.title {
   font-size: 54px;
   line-height: normal;
-  color: #005850;
+  color: #4169e1;
   text-align: center;
 }
 
@@ -620,6 +636,93 @@ h1.title {
   margin-bottom: 45px;
 }
 
+.main {
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.office-left-box {
+  padding: 20px;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(200, 200, 200, 0.13);
+  min-height: 268px;
+  height: auto;
+}
+
+.contact-box {
+  border: 1px solid #4169e1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ph a, .email a {
+  font-size: 26px;
+  color: #4169e1 !important;
+  text-decoration: none;
+  font-weight: 700;
+  transition-property: color,background-color,border-color;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+}
+
+.email a {
+  font-size: 20px;
+}
+
+.field-offices {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.field-offices-item:last-child {
+  margin-right: 0 !important;
+}
+
+.field-offices-item {
+  width: 18%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.field-offices-item-box {
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(200, 200, 200, 0.13);
+  padding: 5px;
+  min-height: 99.2px;
+  height: auto;
+}
+
+.contact-page-info a {
+  color: var(--link_color);
+  font-size: var(--body_typography-font-size);
+  font-weight: 700;
+  transition-property: color, background-color, border-color;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+  text-decoration: none;
+  border: none;
+}
+
+.contact-page-info a:hover {
+  color: #580007 !important;
+  text-decoration: none;
+}
+
+.contact-link {
+  font-size: var(--body_typography-font-size);
+  color: var(--link_color);
+  transition-property: color,background-color,border-color;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+  border-bottom: 1px solid #580007;
+}
+
 @media screen and (min-width: 992px) {
   .about-colt,
   .management-team {
@@ -638,8 +741,22 @@ h1.title {
   }
 }
 
+@media (max-width: 768px) {
+  .field-offices-item {
+    width: 32%;
+    margin-right: 10px;
+  }
+}
+
 @media (min-width: 576px) {
   .squares-container {
     max-width: 540px;
+  }
+}
+
+@media (max-width: 576px) {
+  .field-offices-item {
+    width: 50%;
+    margin-right: 0px;
   }
 }

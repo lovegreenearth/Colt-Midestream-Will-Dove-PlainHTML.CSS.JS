@@ -83,7 +83,7 @@ header {
 }
 
 .main-menu ul li.active-menu-link a span {
-    background-color: #005850;
+    background-color: #4169e1;
     color: #ffffff;
 }
 
@@ -98,9 +98,9 @@ header {
 .main-menu ul li a span {
     display: inline-block;
     background-color: transparent;
-    color: #005850;
+    color: #4169e1;
     padding: 12px;
-    border: 3px solid #005850;
+    border: 3px solid #4169e1;
     text-align: center;
     transform: skew(-20deg);
     transition-duration: 500ms;
@@ -118,7 +118,7 @@ header {
     width: 152px;
     font-size: 14px;
     background-color: #fff;
-    color: #005850;
+    color: #4169e1;
 }
 
 a#mobile-menu-icon span {
@@ -177,7 +177,7 @@ a#mobile-menu-icon {
     line-height: 42px;
     background-color: #fff;
     border-color: #e2e2e2;
-    color: #005850;
+    color: #4169e1;
     transform: skew(-20deg);
     transition-duration: 500ms;
     font-weight: bold;    

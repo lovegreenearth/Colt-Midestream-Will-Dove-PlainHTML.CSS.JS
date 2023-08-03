@@ -14,7 +14,12 @@ body {
   font-style: var(--body_typography-font-style, normal);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: ff-meta-correspondence-web-p, sans-serif !important;
   font-weight: 700 !important;
   letter-spacing: 2px !important;
@@ -164,7 +169,7 @@ h1, h2, h3, h4, h5, h6 {
   --content_break_point: 800;
   --typography_sensitivity: 0;
   --typography_factor: 1.5;
-  --primary_color: #009579;
+  --primary_color: #4169e1;
   --primary_color-85a: rgba(0, 149, 121, 0.85);
   --primary_color-7a: rgba(0, 149, 121, 0.7);
   --primary_color-5a: rgba(0, 149, 121, 0.5);
@@ -194,11 +199,11 @@ h1, h2, h3, h4, h5, h6 {
   --nav_typography-font-weight: 400;
   --nav_typography-font-size: 18px;
   --nav_typography-letter-spacing: 0px;
-  --nav_typography-color: #005850;
+  --nav_typography-color: #4169e1;
   --nav_typography-color-65a: rgba(0, 88, 80, 0.65);
   --nav_typography-color-35a: rgba(0, 88, 80, 0.35);
   --nav_typography-text-transform: none;
-  --menu_hover_first_color: #005850;
+  --menu_hover_first_color: #4169e1;
   --menu_hover_first_color-65a: rgba(0, 88, 80, 0.65);
   --menu_sub_color: #212934;
   --nav_dropdown_font_size: 14px;
@@ -264,14 +269,14 @@ h1, h2, h3, h4, h5, h6 {
   --body_typography-line-height: 1.8;
   --body_typography-letter-spacing: 0px;
   --body_typography-color: #4a4e57;
-  --link_color: #009579;
+  --link_color: #4169e1;
   --link_color-8a: rgba(0, 149, 121, 0.8);
   --h1_typography-font-family: "Meta Bold";
   --h1_typography-font-weight: 400;
   --h1_typography-line-height: 1.16;
   --h1_typography-letter-spacing: 0px;
   --h1_typography-font-size: 54px;
-  --h1_typography-color: #005850;
+  --h1_typography-color: #4169e1;
   --h1_typography-text-transform: none;
   --h1_typography-margin-top: 120px;
   --h1_typography-margin-bottom: 0.67em;
@@ -289,7 +294,7 @@ h1, h2, h3, h4, h5, h6 {
   --h3_typography-line-height: 1.3;
   --h3_typography-letter-spacing: 0px;
   --h3_typography-font-size: 32px;
-  --h3_typography-color: #009579;
+  --h3_typography-color: #4169e1;
   --h3_typography-text-transform: none;
   --h3_typography-margin-top: 1em;
   --h3_typography-margin-bottom: 1em;
@@ -399,10 +404,10 @@ h1, h2, h3, h4, h5, h6 {
   --button_font_size: 14px;
   --button_line_height: 17px;
   --button_text_transform: uppercase;
-  --button_gradient_top_color: #009579;
-  --button_gradient_bottom_color: #009579;
-  --button_gradient_top_color_hover: #a09857;
-  --button_gradient_bottom_color_hover: #a09857;
+  --button_gradient_top_color: #4169e1;
+  --button_gradient_bottom_color: #4169e1;
+  --button_gradient_top_color_hover: #580007;
+  --button_gradient_bottom_color_hover: #580007;
   --button_gradient_start: 0%;
   --button_gradient_end: 100%;
   --button_gradient_angle: 180deg;
@@ -441,25 +446,25 @@ h1, h2, h3, h4, h5, h6 {
   --icon_border_color: #4a4e57;
   --icon_border_color_hover: #65bc7b;
   --pricing_box_color: #65bc7b;
-  --sep_color: #a09857;
+  --sep_color: #580007;
   --tabs_bg_color: #ffffff;
   --tabs_inactive_color: #f9f9fb;
   --tabs_border_color: #e2e2e2;
   --testimonial_bg_color: #f9f9fb;
   --testimonial_text_color: #4a4e57;
-  --title_border_color: #a09857;
-  --accordion_divider_color: #a09857;
-  --accordion_divider_hover_color: #a09857;
+  --title_border_color: #580007;
+  --accordion_divider_color: #580007;
+  --accordion_divider_hover_color: #580007;
   --accordian_inactive_color: #212934;
   --accordian_active_color: #65bc7b;
-  --faq_accordion_divider_color: #a09857;
-  --faq_accordion_divider_hover_color: #a09857;
+  --faq_accordion_divider_color: #580007;
+  --faq_accordion_divider_hover_color: #580007;
   --faq_accordion_title_typography-font-family: "Zilla Slab";
   --faq_accordion_title_typography-font-weight: 400;
   --faq_accordion_title_typography-line-height: 1.36;
   --faq_accordion_title_typography-text-transform: none;
   --faq_accordion_title_typography-letter-spacing: 0px;
-  --faq_accordion_title_typography-color: #009579;
+  --faq_accordion_title_typography-color: #4169e1;
   --faq_accordion_content_typography-font-size: 16px;
   --faq_accordion_content_typography-font-weight: 400;
   --faq_accordion_content_typography-text-transform: none;
@@ -563,6 +568,14 @@ body {
   --wp--preset--font-size--huge: 48px;
 }
 
+a {
+  font-weight: 700;
+}
+
+/* a:hover {
+  color: #580007 !important;
+} */
+
 .text-white {
   color: white;
 }
@@ -580,15 +593,15 @@ body {
 #580007 */
 
 footer {
-  background-color: #009579;
+  background-color: #4169e1;
 }
 
 #scroll-up a {
   right: 75px;
   border-radius: 6px 6px 0px 0px;
   pointer-events: auto;
-  opacity: .9;
-  transition: opacity .4s ease-in-out,background .2s ease-in-out;
+  opacity: 0.9;
+  transition: opacity 0.4s ease-in-out, background 0.2s ease-in-out;
   bottom: 0;
   height: 35px;
   position: fixed;
@@ -601,16 +614,20 @@ footer {
 }
 
 #scroll-up a:hover {
-  background-color: #009579;
+  background-color: #4169e1;
 }
 
 #scroll-up a span::before {
   line-height: 35px;
-  content: "\f106";
-  -webkit-font-smoothing: antialiased;
-  font-family: awb-icons;
-  font-size: 22px;
-  color: #fff;
+  content: "";
+  position: absolute;
+  inset: 37%;
+  transform: translateY(15%) rotate(-45deg);
+  border-top: 4px solid #fff;
+  border-right: 4px solid #fff;
+  height: 13px;
+  width: 13px;
+  z-index: 1000;
 }
 
 .fixed-scroll a {
@@ -644,12 +661,20 @@ footer {
   margin-top: 20px;
 }
 
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
 .mr-50 {
   margin-right: 50px;
 }
 
 .footer-logo {
-  background-color: #005850;
+  background-color: #4169e1;
   margin-left: -100px;
   min-height: 250px;
 }
@@ -667,7 +692,7 @@ footer {
 }
 
 #footer_middle {
-  background-color: #005850;
+  background-color: #4169e1;
   height: 250px;
   clip-path: polygon(0 0, 0 100%, 50% 0);
   margin-left: -16px;
@@ -732,7 +757,7 @@ footer {
 }
 
 .telphone:hover {
-  color: #a09857 !important;
+  color: #580007 !important;
   text-decoration: none;
 }
 
@@ -758,7 +783,7 @@ footer {
 
 .footer-copyright-link {
   font-weight: 700;
-  border-bottom: 1px solid #a09857;
+  border-bottom: 1px solid #580007;
   color: var(--copyright_link_color);
   transition-property: color, background-color, border-color;
   transition-duration: 0.2s;
@@ -766,8 +791,9 @@ footer {
 }
 
 .footer-copyright-link:hover {
-  color: #a09857 !important;
+  color: #580007 !important;
   text-decoration: none;
+  color: white;
 }
 
 @media (max-width: 767px) {
@@ -805,5 +831,5 @@ footer {
 }
 
 footer {
-  background-color: #009579;
+  background-color: #507bfb;
 }

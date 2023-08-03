@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
-<link rel="stylesheet" href="../assets/css/styles.css" />
 <div>
   <footer class="px-30">
     <div class="row">
@@ -36,13 +34,15 @@
     </div>
   </footer>
   <footer class="px-30 footer-copyright-area">
+    <div id="scroll-up">
+      <a>
+        <span></span>
+      </a>
+    </div>
     <div class="text-center w-100">
       <div class="copyright-notice">
         &copy;
-        <script type="text/javascript">
-          var year = new Date();
-          document.write(year.getFullYear());
-        </script>
+        <span id="year"></span>
         Colt Midstream | Website by
         <a href="https://digitalemona.de" class="footer-copyright-link"
           >DigitaLemonade</a
@@ -63,3 +63,14 @@
     </div>
   </footer>
 </div>
+<script type="text/javascript">
+  var year = new Date();
+  document.getElementById("year").innerHTML = year.getFullYear();
+
+  $(document).ready(function () {
+    document.getElementById("scroll-up").addEventListener("click", function () {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    });
+  });
+</script>
